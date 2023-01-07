@@ -1,0 +1,146 @@
+/* ==================Fonts================= */
+
+/* yanone-kaffeesatz-regular - latin */
+@font-face {
+  font-family: "Yanone Kaffeesatz";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Fonts/mainfont/yanone-kaffeesatz-v23-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./Fonts/mainfont/yanone-kaffeesatz-v23-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("./Fonts/mainfont/yanone-kaffeesatz-v23-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./Fonts/mainfont/yanone-kaffeesatz-v23-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("./Fonts/mainfont/yanone-kaffeesatz-v23-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./Fonts/mainfont/yanone-kaffeesatz-v23-latin-regular.svg#YanoneKaffeesatz")
+      format("svg"); /* Legacy iOS */
+}
+/* poppins-regular - latin */
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./Fonts/bodyfont/poppins-v20-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("./Fonts/bodyfont/poppins-v20-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("./Fonts/bodyfont/poppins-v20-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("./Fonts/bodyfont/poppins-v20-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("./Fonts/bodyfont/poppins-v20-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("./Fonts/bodyfont/poppins-v20-latin-regular.svg#Poppins")
+      format("svg"); /* Legacy iOS */
+}
+
+/* ==================Fonts================= */
+
+:root {
+  --primary__color: white;
+  --secondary__color: #fb621c;
+  --primary__font: "Yanone Kaffeesatz";
+  --secondary__font: "Poppins";
+  --third__color: #04bec5;
+}
+
+/* ==================Body================= */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  box-sizing: border-box;
+  position: relative;
+  color: var(--primary__color);
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--primary__font);
+  text-transform: uppercase;
+  color: var(--primary__color);
+  margin: 0;
+  padding: 0;
+}
+strong {
+ color: var(--secondary__color);
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--primary__color);
+}
+
+li {
+  font-family: var(--secondary__font);
+  font-size: 14px;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: var(--primary-color);
+}
+
+button {
+  width: max-content;
+  padding: 10px 20px;
+  background-color: var(--secondary__color);
+  outline: none;
+  border: none;
+  color: var(--primary__color);
+  font-family: var(--primary__font);
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p,
+span {
+  font-family: var(--secondary__font);
+  color: var(--primary-color);
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 1050px) {
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 15px;
+  }
+}

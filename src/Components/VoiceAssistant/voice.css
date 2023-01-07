@@ -1,0 +1,37 @@
+.Voice{
+    padding: 50px 0px;
+    box-shadow:  var(--third__color) 0px 0px 4px;
+}
+.voice__box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.voice__heading{
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.middle{
+    font-size: 18px;
+    color: #AAA;
+}
+.small{
+    color: #AAA;
+    font-size: 12px;
+}
+
+
+
+
+
+
+    
+    
+    
+    
+    
+.voice__gif{
+    width: 300px;
+    height: 300px
+}

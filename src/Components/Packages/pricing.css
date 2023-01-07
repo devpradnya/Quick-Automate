@@ -1,0 +1,112 @@
+.Pricing {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0px;
+  gap: 60px;
+  box-sizing: border-box;
+}
+.pricing__container {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.pricing__box {
+  padding: 50px 20px 20px 25px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 750px;
+  box-shadow: var(--third__color) 0px 0px 4px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  position: relative;
+}
+.pricing__list {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pricing__list .pricing__list__list {
+  position: relative;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 1.65;
+}
+.pricing__list .pricing__list__list:before {
+  content: "\2714\0020";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: -7%;
+  color: var(--third__color);
+}
+.pricing__heading {
+  color: var(--third__color);
+  font-size: 33px;
+  text-align: left;
+  margin-left: 40px;
+}
+.pricing__price {
+  font-size: 55px;
+  text-align: left;
+  color: var(--third__color);
+  font-weight: 800;
+  font-family: var(--primary__font);
+  margin: 10px 0px 10px 63px;
+  position: relative;
+}
+.pricing__price::before {
+  content: "\20B9";
+  position: absolute;
+  left: -10%;
+}
+.pricing__kit {
+  text-align: left;
+  margin-left: 40px;
+}
+.pricing__features {
+  font-size: 18px;
+  color: var(--third__color);
+  font-weight: bold;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+.pricing__button {
+  background-color: var(--third__color);
+  margin-left: 40px;
+}
+.pricing__box-small {
+  position: absolute;
+  transform :rotate(270deg);
+  background-color: var(--third__color);
+  padding: 05px 10px;
+  left: -47px;
+  top: 46px;
+  border-top-right-radius: 7px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 1050px) {
+  .pricing__box {
+    height: auto;
+  }
+  .pricing__container {
+    flex-direction: column;
+  }
+  .heading {
+    font-size: 32px;
+  }
+}

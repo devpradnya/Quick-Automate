@@ -1,0 +1,7 @@
+.footerbar{
+    width: 100%;
+    background-color: var(--third__color);
+    color: black;
+    padding: 05px 0px;
+    text-align: center;
+}

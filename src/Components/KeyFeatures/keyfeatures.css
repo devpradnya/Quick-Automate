@@ -1,0 +1,33 @@
+.key__features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 74%;
+  margin: auto;
+  padding: 50px 0px;
+  gap: 50px;
+  flex-direction: row;
+}
+.key__features__box {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  box-shadow: var(--third__color) 0px 0px 4px;
+  width: 290px;
+  height: 265px;
+  padding: 30px 20px;
+  border-radius: 15px;
+}
+.box__name {
+  margin-top: 0px;
+  font-size: 32px;
+  text-transform: capitalize;
+}
+.box__description {
+  font-size: 15px;
+}
+@media only screen and (max-width: 1050px) {
+  .key__features {
+    flex-direction: column;
+  }
+}
